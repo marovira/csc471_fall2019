@@ -1,4 +1,4 @@
-# csc471_fall2019
+# CSc 471 Fall 2019
 
 In this site you will find the following class materials (per folder):
 
