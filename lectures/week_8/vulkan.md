@@ -8,3 +8,4 @@ the tutorial:
 * [Graphics pipeline basics](https://vulkan-tutorial.com/Drawing_a_triangle/Graphics_pipeline_basics/Introduction)
     * From this section, read the Introduction, Shader modules, and Fixed
       functions.
+* [Swap chain recreation](https://vulkan-tutorial.com/Drawing_a_triangle/Swap_chain_recreation)
