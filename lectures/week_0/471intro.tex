@@ -1,0 +1,175 @@
+\documentclass[11pt]{beamer}
+\usetheme{Warsaw}
+\usepackage[utf8]{inputenc}
+
+\author{Mauricio Andres Rovira Galvez}
+\title{CSc 471 - Fall 2019}
+\subtitle{Course Introduction}
+
+\setbeamercovered{transparent} 
+\setbeamertemplate{navigation symbols}{} 
+
+\institute{University of Victoria \\ Department of Computer Science}  
+\date{\today} 
+\subject{CSc 471} 
+
+\begin{document}
+  \begin{frame}
+    \maketitle
+  \end{frame}
+
+  \begin{frame}{Overview}
+    CSc 471 is an advanced graphics course focusing in computer rendering.
+    Specifically, we shall be focusing on real-time rendering using C++ and
+    OpenGL. Topics include:
+    \begin{itemize}
+      \item Rendering pipeline and the GPU,
+      \item Shading,
+      \item Texturing,
+      \item Light and Colour,
+      \item Physically-based shading,
+      \item Local and Global Illumination,
+      \item Rendering optimizations.
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Computer Science Advising Information}
+    \begin{block}{Undergraduate Advisor}
+      \begin{itemize}
+        \item Irene Statham (\texttt{cscadvisor@uvic.ca})
+        \item Office: ECS 512
+        \item Undergraduate Advising Hours:
+          \begin{itemize}
+            \item MWF 10:00-12:00
+            \item TR: 13:30-15:30
+          \end{itemize}
+      \end{itemize}
+    \end{block}
+    \begin{block}{Administrative Announcements}
+      \begin{itemize}
+        \item {\tiny If you are taking this course for the third (or
+          greater) time, you must request, in \textbf{writing}, permission from
+        the Chair of the Department and the Dean of the Faculty.}
+        \item {\tiny If you have not met \textbf{all} the prerequisites
+            for this course, you must receive department permission to stay in
+            this class.  If you do not receive permission, you will be
+            \textbf{automatically dropped from the course} and a prerequisite
+            drop will be recorded on your transcript}
+        \item {\tiny In both of the above cases, you should visit the
+          undergraduate advisor for more information.}
+      \end{itemize}
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{Instructor Information}
+    \begin{block}{Lectures}
+      \begin{itemize}
+        \item Mauricio A. Rovira Galvez (\texttt{marovira@uvic.ca})
+        \item Lectures: MTR 17:30-18:20 in ECS 108
+        \item Office: ECS 621
+      \end{itemize}
+    \end{block}
+
+    \begin{block}{Labs}
+      \begin{itemize}
+        \item Mauricio A. Rovira Galvez
+        \item Thursdays 18:30-19:20
+      \end{itemize}
+    \end{block}
+
+    \begin{block}{Mauricio's Office Hours}
+      \begin{itemize}
+        \item MT 18:30-19:30
+      \end{itemize}
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{conneX Information}
+    This course will use the Department of Computer Science's conneX course
+    management system for grades and assignments.
+    \begin{center}
+      \texttt{https://connex.csc.uvic.ca/}
+    \end{center}
+    Lecture material, code samples, etc will be provided in a separate Github
+    page. \textbf{Lecture notes are not comprehensive, and may not include all
+    material covered in class. You are responsible for all material covered in
+    lectures and labs, including material which is not posted afterwards}.
+    \begin{center}
+      \texttt{https://github.com/marovira/csc471\_fall2019}
+    \end{center}
+  \end{frame}
+
+  \begin{frame}{Evaluation Scheme (1)}
+    \begin{block}{Assignments}
+      Programming Assignments (4): \hspace*{\fill}32\%
+    \end{block}
+
+    \begin{block}{Exams}
+      Exam 1 (October 28, 2019): \hspace*{\fill}15\% \\
+      Exam 2 (December 3, 2019): \hspace*{\fill}15\% \\
+    \end{block}
+
+    \begin{block}{Project}
+      Programming project : \hspace*{\fill}28\%
+    \end{block}
+
+    \begin{block}{In-Class Presentations}
+      In-Class Presentations: \hspace*{\fill}10\%
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{Evaluation Scheme (2)}
+    \textbf{Exams:}\\
+    Exams 1 and 2 will be 50 minutes long and held during the regular lecture
+    time. Both exams will be open-book and open-notes (but no electronic
+    devices will be permitted).
+
+    \textbf{Assignments:}\\
+    Assignments will be primarily programming based. All assignments will employ
+    a graphics development framework.
+
+    \textbf{Programming Project:}\\
+    A coding project implementing an advanced topic in rendering. Topics will be
+    provided later in the course.
+
+    \textbf{In-Class Presentations:}\\
+    A short, 10 minute presentation on an assigned topic in rendering. Topics
+    will be provided later in the course.
+  \end{frame}
+
+  \begin{frame}{Evaluation Scheme (3)}
+    \textbf{Missed Work:} \\
+    Exceptions will be made for missed work (including late assignments)
+    \textbf{only} in cases where an academic concession (with documentation)
+    applies. Links to the relevant university policies are available from the
+    posted official course outline. \medskip
+
+    \textbf{Academic Integrity:} \\
+    Plagiarism detection software will be used on assignment submissions where
+    appropriate. Academic integrity violations will be reported to the
+    department's academic integrity committee with recommendations for
+    appropriate penalties. Links to the relevant university policies are
+    available from the posted official course outline. Note that the
+    university's guidelines clearly state that handing an assignment which is
+    mostly or entirely plagiarized should result in a grade of F being given for
+    the course.
+  \end{frame}
+
+  \begin{frame}{Evaluation Scheme (4)}
+    \textbf{Acceptable Collaboration:} \\
+    Computer Science and Mathematics are inherently collaborative disciplines,
+    even if the stereotypes might say otherwise. You are encouraged to discuss
+    all aspects of this course, including assignment questions, with your peers.
+
+    However, your actual assignment submissions must be your own work, and
+    should be created independently (in your own words). Handing in the work of
+    another student and claiming it as your ow in plagiarism. Sharing your
+    submission with another student (or the internet), even if it is not
+    directly copied by anyone else, is also plagiarism. \medskip
+
+    \textbf{Rule of thumb:} Talk to your peers about assignments and collaborate
+    on conceptual solutions, but \textbf{do not} look at each other's code
+    (either over the shoulder or by sharing it electronically).
+  \end{frame}
+
+\end{document}
